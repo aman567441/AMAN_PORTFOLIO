@@ -1,0 +1,121 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #111;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #00acee;
+  transform: scale(1.1);
+}
+
+.nav-links li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #00acee;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-links li a:hover::before {
+  transform: scaleX(1);
+}
+
+.nav-links li a.active {
+  color: #00acee;
+  font-weight: bold;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.hamburger:hover {
+  transform: rotate(90deg);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+ /* Mobile Nav Menu with Animation */
+.nav-links-mobile {
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #000;
+  width: 100%;
+  padding: 20px 0;
+  gap: 20px;
+  z-index: 999;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Show the mobile nav menu with slide-down effect */
+.nav-links-mobile.show {
+  display: flex;
+  max-height: 500px;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+  .nav-links-mobile li {
+    text-align: center;
+  }
+
+  .nav-links-mobile li a {
+    font-size: 20px;
+  }
+}
