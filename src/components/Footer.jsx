@@ -22,7 +22,7 @@ const Footer = () => {
          <a href="https://github.com/aman567441" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
          <a href="https://www.linkedin.com/in/aman-kumar-b706b6202/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
         <a href="https://www.naukri.com/mnjuser/profile" target="_blank" rel="noopener noreferrer"><FaBriefcase /></a>
-        <a href="https://www.instagram.com/your-profile" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+        <a href="https://www.instagram.com/verman95/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
         </div>
       </div>
 
