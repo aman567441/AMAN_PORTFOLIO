@@ -11,11 +11,4 @@ node_modules/
 # Ignore log files
 *.log
 
-# Ignore photos and image folders
-public/images/logo/
-public/images/project_img/
-public/images/protfolio/
 
-public/contact.
-public/aman.jpg
-public/aman_resume.pdf
